@@ -40,7 +40,7 @@ Preferences preferences;
 #define BASE_PATH "/Videos/"
 #define AAC_FILENAME "/44100.aac"
 #define MJPEG_FILENAME "/288_30fps.mjpeg"
-#define VIDEO_COUNT 3
+#define VIDEO_COUNT 4
 
 /* Arduino_GFX */
 #include <Arduino_GFX_Library.h>
