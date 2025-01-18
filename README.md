@@ -1,5 +1,15 @@
 # 2.8inch-video-player
 
+encod mjpeg
+```
+fmpeg -i input.mp4 -vf "fps=30,scale=-1:240:flags=lanczos,crop=288:in_h:(in_w-288)/2:0" -q:v 11 288_30fps.mjpeg
+```
+endcod aac
+```
+ffmpeg -i input.mp4 -ar 44100 -ac 1 -ab 24k -filter:a loudnorm -filter:a "volume=5dB" 44100.aac
+```
+
+
 <div align=center>
 	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/font.png" width="700" height="350">
 	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/reverse.png" width="700" height="350">   
