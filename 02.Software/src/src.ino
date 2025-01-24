@@ -6,7 +6,7 @@
 */
 /////////////////////////////////////////////////////////////////
 // This project is based on a Mini Retro TV.
-// https://www.instructables.com/Mini-Retro-TV/ 
+// https://www.instructables.com/Mini-Retro-TV/
 /////////////////////////////////////////////////////////////////
 
 /***
@@ -27,6 +27,7 @@
 #define AUDIOASSIGNCORE 1
 #define DECODEASSIGNCORE 0
 #define DRAWASSIGNCORE 1
+#define BUTTON_PIN 0
 
 #include "config.h"
 #include <WiFi.h>
@@ -98,6 +99,8 @@ void setup() {
   WiFi.mode(WIFI_OFF);
   Serial.begin(115200);
 
+  pinMode(BUTTON_PIN, INPUT_PULLUP);  // 启用上拉电阻
+
   // preferences.begin(APP_NAME, false);
   // preferences.clear(); // 清除 Preferences 中的所有数据
   // video_idx = 1; // 重置 video_idx 为 1
@@ -112,6 +115,14 @@ void setup() {
   xTaskCreate(
     touchTask,
     "touchTask",
+    2000,
+    NULL,
+    1,
+    NULL);
+
+  xTaskCreate(
+    buttonTask,
+    "button",
     2000,
     NULL,
     1,
@@ -134,7 +145,7 @@ void setup() {
   if (!SD.begin(SD_CS, spi, 80000000)) {
     Serial.println("ERROR: File system mount failed!");
     gfx->println("ERROR: File system mount failed!");
-    printSDCardType(); // 打印 SD 卡类型
+    printSDCardType();  // 打印 SD 卡类型
     return;
   }
 
@@ -186,6 +197,18 @@ void touchTask(void *parameter) {
       }
     }
     vTaskDelay(1000);
+  }
+}
+
+void buttonTask(void *param) {
+  while (1) {
+    if (digitalRead(BUTTON_PIN) == LOW) {
+      delay(100);
+      if (digitalRead(BUTTON_PIN) == LOW) {
+        videoController(1);
+      }
+    }
+    vTaskDelay(10 / portTICK_PERIOD_MS);  // 稍微延时，避免占用过多 CPU
   }
 }
 
@@ -258,7 +281,7 @@ void playVideoWithAudio(int channel) {
   vFile.close();
   aFile.close();
 
-  videoController(1);//自动播放下一个
+  videoController(1);  //自动播放下一个
 }
 
 void videoController(int next) {
