@@ -11,6 +11,6 @@ ffmpeg -i input.mp4 -ar 44100 -ac 1 -ab 24k -filter:a loudnorm -filter:a "volume
 
 
 <div align=center>
-	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/font.png" width="600" height="350">
+	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/font.png" width="550" height="350">
 	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/reverse.png" width="500" height="350">   
 </div>
