@@ -1,28 +1,5 @@
-/////////////////////////////////////////////////////////////////
-/*
-  Mini Lego TV based on ESP32
-  For More Information: https://youtu.be/2TOVohmUqOE
-  Created by Eric N. (ThatProject)
-*/
-/////////////////////////////////////////////////////////////////
-// This project is based on a Mini Retro TV.
-// https://www.instructables.com/Mini-Retro-TV/
-/////////////////////////////////////////////////////////////////
-
-/***
- * Required libraries:
- * https://github.com/moononournation/Arduino_GFX.git
- * https://github.com/pschatzmann/arduino-libhelix.git
- * https://github.com/bitbank2/JPEGDEC.git
- */
-
-/***
-* Added libraries:
-* https://github.com/vshymanskyy/Preferences
-* https://github.com/fbiego/CST816S
-*/
 #define FPS 24
-#define MJPEG_BUFFER_SIZE (160 * 128 * 2 / 4)
+#define MJPEG_BUFFER_SIZE (320 * 256 * 2 / 8)
 #define AUDIOASSIGNCORE 1
 #define DECODEASSIGNCORE 0
 #define DRAWASSIGNCORE 1
@@ -37,7 +14,7 @@
 Preferences preferences;
 #define APP_NAME "video_player"
 #define K_VIDEO_INDEX "video_index"
-#define BASE_PATH "/Videos/"
+#define BASE_PATH "/Videos_320_240/"
 #define AAC_FILENAME "/44100.aac"
 #define MJPEG_FILENAME "/160_120.mjpeg"
 #define VIDEO_COUNT 4

@@ -14,7 +14,7 @@
 
 #define SD_SCK 14
 #define SD_MOSI 15
-#define SD_MISO 4
+#define SD_MISO 16
 #define SD_CS 13
 
 #define TOUCH_SDA 17
