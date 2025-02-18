@@ -1,5 +1,5 @@
 #define FPS 24
-#define MJPEG_BUFFER_SIZE (320 * 256 * 2 / 8)
+#define MJPEG_BUFFER_SIZE (320 * 240 * 2 / 8)
 #define AUDIOASSIGNCORE 1
 #define DECODEASSIGNCORE 0
 #define DRAWASSIGNCORE 1
@@ -16,7 +16,7 @@ Preferences preferences;
 #define K_VIDEO_INDEX "video_index"
 #define BASE_PATH "/Videos_320_240/"
 #define AAC_FILENAME "/44100.aac"
-#define MJPEG_FILENAME "/160_120.mjpeg"
+#define MJPEG_FILENAME "/320_240.mjpeg"
 #define VIDEO_COUNT 4
 
 /* Arduino_GFX */

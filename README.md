@@ -6,7 +6,7 @@ encod mjpeg
 ffmpeg -i input.mp4 -vf "fps=30,scale=-1:240:flags=lanczos,crop=288:in_h:(in_w-288)/2:0" -q:v 11 288_30fps.mjpeg
 ```
 
-160*120
+320*240
 ```
 ffmpeg -i input.mp4 -vf "fps=24,scale=320:240:flags=lanczos" -q:v 9 320_240.mjpeg
 ```

@@ -9,8 +9,8 @@
 #define I2S_MCLK -1
 #define I2S_SCLK 25
 #define I2S_LRCLK 26
-#define I2S_DOUT -1
-#define I2S_DIN 32
+#define I2S_DOUT 32
+#define I2S_DIN -1
 
 #define SD_SCK 14
 #define SD_MOSI 15
