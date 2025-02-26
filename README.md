@@ -1,24 +1,8 @@
-# 2.8inch-video-player
+# 2.8inch Video Player
 
-encod mjpeg
-288*240
-```
-ffmpeg -i input.mp4 -vf "fps=30,scale=-1:240:flags=lanczos,crop=288:in_h:(in_w-288)/2:0" -q:v 11 288_30fps.mjpeg
-```
+reference: https://www.quwj.com/2022/08/31/mini-retro-tv.html
 
-320*240
-```
-ffmpeg -i input.mp4 -vf "fps=24,scale=320:240:flags=lanczos" -q:v 9 320_240.mjpeg
-```
-
-endcod aac
-```
-ffmpeg -i input.mp4 -ar 44100 -ac 1 -ab 24k -filter:a loudnorm -filter:a "volume=5dB" 44100.aac
-```
-endcod mp3
-```
-ffmpeg -i input.mp4 -ar 44100 -ac 1 -q:a 9 output.mp3
-```
+This project is based on the ESP32. For the code, I referred to Chen Liang’s work and made modifications on top of it. For example, I changed the resolution to 320x240 and implemented continuous playback functionality. Additionally, I designed a PCB for the project. However, due to a small mistake, I missed a connection near the switch, which prevents the circuit from getting power. Once I have the necessary tools, I will fix it, and I believe this project will become perfect.
 
 
 <div align=center>
