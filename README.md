@@ -6,6 +6,7 @@ This project is based on the ESP32. For the code, I referred to Chen Liang’s w
 
 
 <div align=center>
-	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/font.png" width="550" height="350">
-	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/01.Hardware/reverse.png" width="500" height="350">   
+	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/pcb1.png" width="500" height="380">
+	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/pcb1.png" width="500" height="380">   
+	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/bb.png" width="600" height="300">   
 </div>
