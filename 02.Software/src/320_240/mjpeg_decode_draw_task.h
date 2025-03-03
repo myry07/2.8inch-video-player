@@ -58,8 +58,8 @@ static int queueDrawMCU(JPEGDRAW *pDraw)
 {
   int len = pDraw->iWidth * pDraw->iHeight * 2;
   JPEGDRAW *j = &jpegdraws[_draw_queue_cnt % NUMBER_OF_DRAW_BUFFER];
-  j->x = pDraw->x + 96;
-  j->y = pDraw->y + 40;
+  j->x = pDraw->x;
+  j->y = pDraw->y;
   j->iWidth = pDraw->iWidth;
   j->iHeight = pDraw->iHeight;
   memcpy(j->pPixels, pDraw->pPixels, len);

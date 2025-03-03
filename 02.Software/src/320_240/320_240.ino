@@ -22,7 +22,7 @@ Preferences preferences;
 /* Arduino_GFX */
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_ESP32SPI(DC, CS, SCK, MOSI, MISO, VSPI);
-Arduino_GFX *gfx = new Arduino_ST7796(bus, RST, 1, false, 320, 480, 0, 0, 0, 0);
+Arduino_GFX *gfx = new Arduino_ST7789(bus, RST, 1, true, 240, 320, 0, 0, 0, 0);
 
 /* Audio */
 #include "esp32_audio_task.h"
@@ -84,7 +84,9 @@ void setup() {
 
   // Init Display
   gfx->begin(80000000);
-  gfx->fillScreen(BLACK);
+  gfx->fillScreen(WHITE);
+  gfx->setRotation(3);
+
   pinMode(BLK, OUTPUT);
   digitalWrite(BLK, HIGH);
 
