@@ -21,7 +21,7 @@ Preferences preferences;
 #define BASE_PATH "/Videos_320_240/"
 #define MP3_FILENAME "/44100.mp3"
 #define MJPEG_FILENAME "/320_240.mjpeg"
-#define VIDEO_COUNT 4
+#define VIDEO_COUNT 7
 
 /* Arduino_GFX */
 #include <Arduino_GFX_Library.h>
@@ -112,6 +112,7 @@ void setup() {
 
   out = new AudioOutputI2S();
   out->SetPinout(I2S_SCLK, I2S_LRCLK, I2S_DOUT);
+  out->SetGain(0.3);  // 设置为 50% 音量
   mp3 = new AudioGeneratorMP3();
   aFile = new AudioFileSourceFS(SD);
 
