@@ -11,11 +11,15 @@
 #include <SD.h>
 #include <Preferences.h>
 
+#include <AudioFileSourceFS.h>
+#include <AudioGeneratorMP3.h>
+#include <AudioOutputI2S.h>
+
 Preferences preferences;
 #define APP_NAME "video_player"
 #define K_VIDEO_INDEX "video_index"
 #define BASE_PATH "/Videos_320_240/"
-#define AAC_FILENAME "/44100.aac"
+#define MP3_FILENAME "/44100.mp3"
 #define MJPEG_FILENAME "/320_240.mjpeg"
 #define VIDEO_COUNT 4
 
@@ -23,9 +27,6 @@ Preferences preferences;
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_ESP32SPI(DC, CS, SCK, MOSI, MISO, VSPI);
 Arduino_GFX *gfx = new Arduino_ST7789(bus, RST, 1, true, 240, 320, 0, 0, 0, 0);
-
-/* Audio */
-#include "esp32_audio_task.h"
 
 /* MJPEG Video */
 #include "mjpeg_decode_draw_task.h"
@@ -39,6 +40,25 @@ static int next_frame = 0;
 static int skipped_frames = 0;
 static unsigned long start_ms, curr_ms, next_frame_ms;
 static unsigned int video_idx = 1;
+
+static AudioGeneratorMP3 *mp3;
+static AudioFileSourceFS *aFile;
+static AudioOutputI2S *out;
+
+int noFiles = 0;
+int fileNo = 1;
+bool buttonPressed = false;
+unsigned long lastDebounceTime = 0;
+const unsigned long debounceDelay = 50;
+
+
+void IRAM_ATTR handleButton() {
+  if ((millis() - lastDebounceTime) > debounceDelay) {
+    buttonPressed = true;
+    lastDebounceTime = millis();
+  }
+}
+
 
 // pixel drawing callback
 static int drawMCU(JPEGDRAW *pDraw) {
@@ -90,6 +110,11 @@ void setup() {
   pinMode(BLK, OUTPUT);
   digitalWrite(BLK, HIGH);
 
+  out = new AudioOutputI2S();
+  out->SetPinout(I2S_SCLK, I2S_LRCLK, I2S_DOUT);
+  mp3 = new AudioGeneratorMP3();
+  aFile = new AudioFileSourceFS(SD);
+
   xTaskCreate(
     touchTask,
     "touchTask",
@@ -106,17 +131,6 @@ void setup() {
     1,
     NULL);
 
-  Serial.println("Init I2S");
-
-  esp_err_t ret_val = i2s_init(I2S_NUM_0, 44100, I2S_MCLK, I2S_SCLK, I2S_LRCLK, I2S_DOUT, I2S_DIN);
-  if (ret_val != ESP_OK) {
-    Serial.printf("i2s_init failed: %d\n", ret_val);
-    gfx->println("i2s_init failed");
-    return;
-  }
-  i2s_zero_dma_buffer(I2S_NUM_0);
-
-  Serial.println("Init FS");
 
   SPIClass spi = SPIClass(HSPI);
   spi.begin(SD_SCK, SD_MISO, SD_MOSI, SD_CS);
@@ -137,7 +151,9 @@ void setup() {
   gfx->printf("CH %d", video_idx);
   delay(1000);
 
-  playVideoWithAudio(video_idx);
+  xTaskCreatePinnedToCore(mp3Task, "mp3", 1024 * 3, NULL, 3, NULL, 1);
+
+  playVideo(video_idx);
 }
 
 void loop() {
@@ -178,6 +194,27 @@ void touchTask(void *parameter) {
   }
 }
 
+void mp3Task(void *param) {
+  String audioFilename = getMP3Filename(video_idx);                 // 使用正确的视频索引
+  Serial.printf("获取到的 MP3 路径: %s\n", audioFilename.c_str());  // 打印路径
+
+  if (!audioFilename.isEmpty()) {
+    playAudio(audioFilename);
+    while (mp3->isRunning() && !buttonPressed) {
+      if (!mp3->loop()) {
+        mp3->stop();
+        break;  // 退出循环
+      }
+      vTaskDelay(10 / portTICK_PERIOD_MS);
+    }
+  } else {
+    Serial.println("未找到 MP3 文件，请检查 SD 卡！");
+    while (1)
+      ;  // 停止执行
+  }
+  vTaskDelete(NULL);  // 任务完成后删除
+}
+
 void buttonTask(void *param) {
   while (1) {
     if (digitalRead(BUTTON_PIN) == LOW) {
@@ -190,60 +227,76 @@ void buttonTask(void *param) {
   }
 }
 
-void playVideoWithAudio(int channel) {
+bool isMP3File(File &entry) {
+  String name = entry.name();
+  return name.endsWith(".mp3") && !entry.isDirectory();
+}
 
-  char aFilePath[40];
-  sprintf(aFilePath, "%s%d%s", BASE_PATH, channel, AAC_FILENAME);
-
-  File aFile = SD.open(aFilePath);
-  if (!aFile || aFile.isDirectory()) {
-    Serial.printf("ERROR: Failed to open %s file for reading\n", aFilePath);
-    gfx->printf("ERROR: Failed to open %s file for reading\n", aFilePath);
-    return;
+int countMP3Files(File dir) {
+  int count = 0;
+  dir.rewindDirectory();  // 重置目录指针
+  while (File entry = dir.openNextFile()) {
+    if (isMP3File(entry)) count++;
+    entry.close();
   }
+  return count;
+}
+
+String getMP3Filename(int video_idx) {
+  char filename[40];
+  sprintf(filename, "%s%d%s", BASE_PATH, video_idx, MP3_FILENAME);  // 生成路径
+
+  if (SD.exists(filename)) {
+    Serial.printf("找到 MP3 文件: %s\n", filename);
+    return String(filename);
+  } else {
+    Serial.printf("MP3 文件不存在: %s\n", filename);
+    return "";
+  }
+}
+
+void playAudio(String filename) {
+  if (mp3->isRunning()) mp3->stop();
+
+  if (aFile->open(filename.c_str())) {
+    Serial.printf("正在播放: %s\n", filename.c_str());
+    mp3->begin(aFile, out);
+  } else {
+    Serial.printf("无法打开文件: %s\n", filename.c_str());
+  }
+}
+
+
+void playVideo(int channel) {
+  video_idx = channel;  // 更新 video_idx
 
   char vFilePath[40];
-  sprintf(vFilePath, "%s%d%s", BASE_PATH, channel, MJPEG_FILENAME);
+  sprintf(vFilePath, "%s%d%s", BASE_PATH, video_idx, MJPEG_FILENAME);  // 生成 MJPEG 路径
 
   File vFile = SD.open(vFilePath);
   if (!vFile || vFile.isDirectory()) {
-    Serial.printf("ERROR: Failed to open %s file for reading\n", vFilePath);
-    gfx->printf("ERROR: Failed to open %s file for reading\n", vFilePath);
+    Serial.printf("ERROR: 无法打开视频文件 %s\n", vFilePath);
+    gfx->printf("ERROR: 无法打开视频文件 %s\n", vFilePath);
     return;
   }
 
-  Serial.println("Init video");
-
+  Serial.println("开始播放视频...");
   mjpeg_setup(&vFile, MJPEG_BUFFER_SIZE, drawMCU, false, DECODEASSIGNCORE, DRAWASSIGNCORE);
-
-  Serial.println("Start play audio task");
-
-  BaseType_t ret = aac_player_task_start(&aFile, AUDIOASSIGNCORE);
-
-  if (ret != pdPASS) {
-    Serial.printf("Audio player task start failed: %d\n", ret);
-    gfx->printf("Audio player task start failed: %d\n", ret);
-  }
-
-  Serial.println("Start play video");
 
   start_ms = millis();
   curr_ms = millis();
   next_frame_ms = start_ms + (++next_frame * 1000 / FPS / 2);
-  while (vFile.available() && mjpeg_read_frame())  // Read video
-  {
+  while (vFile.available() && mjpeg_read_frame()) {
     total_read_video_ms += millis() - curr_ms;
     curr_ms = millis();
 
-    if (millis() < next_frame_ms)  // check show frame or skip frame
-    {
-      // Play video
+    if (millis() < next_frame_ms) {
       mjpeg_draw_frame();
       total_decode_video_ms += millis() - curr_ms;
       curr_ms = millis();
     } else {
       ++skipped_frames;
-      Serial.println("Skip frame");
+      Serial.println("跳过帧");
     }
 
     while (millis() < next_frame_ms) {
@@ -253,13 +306,10 @@ void playVideoWithAudio(int channel) {
     curr_ms = millis();
     next_frame_ms = start_ms + (++next_frame * 1000 / FPS);
   }
-  int time_used = millis() - start_ms;
-  int total_frames = next_frame - 1;
-  Serial.println("AV end");
+  Serial.println("视频播放结束");
   vFile.close();
-  aFile.close();
 
-  videoController(1);  //自动播放下一个
+  videoController(1);  // 自动播放下一个
 }
 
 void videoController(int next) {

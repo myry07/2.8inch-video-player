@@ -15,5 +15,5 @@ ffmpeg -i input.mp4 -ar 44100 -ac 1 -ab 24k -filter:a loudnorm -filter:a "volume
 ```
 endcod mp3
 ```
-ffmpeg -i input.mp4 -ar 44100 -ac 1 -q:a 9 output.mp3
+ffmpeg -i input.mp4 -ar 44100 -ac 1 -q:a 9 44100.mp3
 ```

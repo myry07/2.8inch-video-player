@@ -36,12 +36,7 @@ void setup() {
   SPI.begin(SD_SCK, SD_MISO, SD_MOSI, SD_CS);
   if (!SD.begin(SD_CS, SPI, 80000000)) { 
     Serial.println("SD卡挂载失败");
-  } else {
-    File root = SD.open("/");
-    noFiles = countMP3Files(root);
-    root.close();
-    Serial.printf("找到%d个MP3文件\n", noFiles);
-  }
+  } 
 }
 
 bool isMP3File(File &entry) {
@@ -59,23 +54,15 @@ int countMP3Files(File dir) {
   return count;
 }
 
-String getMP3Filename(int targetNo) {
-  int counter = 0;
-  File dir = SD.open("/");
-  dir.rewindDirectory();
-  while (File entry = dir.openNextFile()) {
-    if (isMP3File(entry)) {
-      if (++counter == targetNo) {
-        String filename = "/" + String(entry.name()); // 添加根目录前缀
-        entry.close();
-        dir.close();
-        return filename;
-      }
-    }
-    entry.close();
+String getMP3Filename() {
+  String filename = "/video_1.mp3";  // 直接指定固定路径
+  if (SD.exists(filename)) {
+    Serial.printf("找到 MP3 文件: %s\n", filename.c_str());
+    return filename;
+  } else {
+    Serial.printf("MP3 文件不存在: %s\n", filename.c_str());
+    return "";
   }
-  dir.close();
-  return "";
 }
 
 void playAudio(String filename) {
@@ -96,7 +83,7 @@ void loop() {
     Serial.printf("切换到文件: %d\n", fileNo);
   }
 
-  String audioFilename = getMP3Filename(fileNo);
+  String audioFilename = getMP3Filename();
   if (!audioFilename.isEmpty()) {
     playAudio(audioFilename);
     while (mp3->isRunning() && !buttonPressed) {
