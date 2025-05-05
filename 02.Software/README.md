@@ -4,7 +4,7 @@ encod mjpeg
 
 download
 ```
-yt-dlp "link"
+yt-dlp "link" -o "input.%(ext)s"
 ```
 
 webm -> mp4
