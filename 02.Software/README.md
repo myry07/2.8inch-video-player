@@ -4,8 +4,14 @@ encod mjpeg
 
 download
 ```
-yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 "link"
+yt-dlp "link"
 ```
+
+webm -> mp4
+```
+ffmpeg -i input.webm -c copy input.mp4
+```
+
 
 288*240
 ```
