@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/CMakeFiles/bootloader
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/CMakeFiles/bootloader.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/CMakeFiles/bootloader-complete.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

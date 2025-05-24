@@ -1,0 +1,647 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbserial-110 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42003eae: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:194
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42003eab: find_desc_for_source at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:192 (discriminator 1)
+--- 0x42003fba: get_available_int at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:351
+--- 0x420041dc: esp_intr_alloc_intrstatus at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:572
+--- 0x4200441d: esp_intr_alloc at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/intr_alloc.c:697
+--- 0x42015ace: sdmmc_host_init at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c:524
+--- 0x4200a5a3: esp_vfs_fat_sdmmc_mount at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c:269
+--- 0x4200a189: sd_mmc_init at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:117
+--- 0x4200a237: i2s_pcm at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/components/sd_mmc/sd_mmc.c:207
+--- 0x4200a057: app_main at /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/005_sd_mmc/main/005_sd_mmc.c:6
+--- 0x420295fb: main_task at /Users/wangjiaqi/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037a6cd: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403759b4: esp_restart_noos at /Users/wangjiaqi/esp/esp-idf/componen

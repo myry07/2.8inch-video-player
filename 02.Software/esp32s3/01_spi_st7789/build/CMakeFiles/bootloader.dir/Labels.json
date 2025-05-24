@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/01_spi_st7789/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
