@@ -1,0 +1,12 @@
+CMake Error at /Users/wangjiaqi/esp/esp-idf/tools/cmake/build.cmake:318 (message):
+  Failed to resolve component 'esp_log' required by component 'max98357':
+  unknown name.
+Call Stack (most recent call first):
+  /Users/wangjiaqi/esp/esp-idf/tools/cmake/build.cmake:361 (__build_resolve_and_add_req)
+  /Users/wangjiaqi/esp/esp-idf/tools/cmake/build.cmake:362 (__build_expand_requirements)
+  /Users/wangjiaqi/esp/esp-idf/tools/cmake/build.cmake:665 (__build_expand_requirements)
+  /Users/wangjiaqi/esp/esp-idf/tools/cmake/project.cmake:717 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

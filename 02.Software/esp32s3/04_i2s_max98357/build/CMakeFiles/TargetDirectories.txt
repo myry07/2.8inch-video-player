@@ -835,6 +835,13 @@
 /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/__idf_max98357.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/edit_cache.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/rebuild_cache.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/list_install_components.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/install.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/install/local.dir
+/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/CMakeFiles/install/strip.dir
 /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

@@ -554,6 +554,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/max98357/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build/esp-idf/main/cmake_install.cmake")
 endif()
 

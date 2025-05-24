@@ -1,0 +1,5 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/opt/homebrew/bin/cmake --regenerate-during-build -S/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357 -B/Users/wangjiaqi/Documents/Github/2.8inch-video-player/02.Software/esp32s3/04_i2s_max98357/build
