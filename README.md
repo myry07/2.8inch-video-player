@@ -2,7 +2,7 @@
 
 v1.4
 <div align=center>
-	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/3.png" width="610" height="410">
+	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/3.png?raw=trueg" width="610" height="410">
 </div>
 
 
