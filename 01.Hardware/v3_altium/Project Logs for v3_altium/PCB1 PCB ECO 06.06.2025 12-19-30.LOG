@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C27
+Change Component Designator: OldDesignator=R? NewDesignator=R13
+Change Component Designator: OldDesignator=R? NewDesignator=R14
+Change Component Designator: OldDesignator=R? NewDesignator=R15
+Change Component Designator: OldDesignator=U? NewDesignator=U7
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC27_1
+Added Member To Class: ClassName=peripheral Member=Component R13 10K
+Added Member To Class: ClassName=peripheral Member=Component R15 10K

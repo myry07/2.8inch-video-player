@@ -1,0 +1,15 @@
+Removed Member From Class: ClassName=Sheet1 Member=C1
+Removed Member From Class: ClassName=Sheet1 Member=L1
+Removed Member From Class: ClassName=Sheet1 Member=R1
+Added Component: Designator=LED1(LED-SMD_4P-L2.0-W2.0-BR-1)
+Added Component: Designator=U1(QFN-56_L7.0-W7.0-P0.40-TL-EP4.0)
+Added Component: Designator=U2(WSON-8_L6.0-W5.0-P1.27-BL-EP)
+Added Component: Designator=U3(TQFN-16_L3.0-W3.0-P0.50-BL-EP1.5)
+Added Component: Designator=U4(QFN-40_L5.0-W5.0-P0.40-TL-EP3.4)
+Added Component: Designator=U5(MIC-SMD_8P-L4.0-W3.0-P1.00-BR)
+Added Member To Class: ClassName=Sheet1 Member=Component LED1 XL-2020RGBC-WS2812B
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32S3R8
+Added Member To Class: ClassName=Sheet1 Member=Component U2 W25Q16JVZPIQ TR
+Added Member To Class: ClassName=Sheet1 Member=Component U3 MAX98357AETE+T
+Added Member To Class: ClassName=Sheet1 Member=Component U4 AXP2101
+Added Member To Class: ClassName=Sheet1 Member=Component U5 MSM261S4030H0R

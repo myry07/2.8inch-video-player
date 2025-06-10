@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GPIO Pin=U2-47
+Added Pin To Net: NetName=RTC_INT Pin=U2-47
+Change Net Name : Old Net Name=LEDK New Net Name=NetFPC1_8

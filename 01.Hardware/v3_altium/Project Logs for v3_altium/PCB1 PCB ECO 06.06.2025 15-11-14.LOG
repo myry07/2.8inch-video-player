@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GPIO Pin=U2-8
+Added Component: Designator=R?(R0402)
+Added Pin To Net: NetName=IO39_SD_CLK Pin=R15-2
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=VDD33 Pin=R?-2
+Added Pin To Net: NetName=GND Pin=U2-8
+Added Pin To Net: NetName=IO39_SD_CLK Pin=U7-5
+Change Net Name : Old Net Name=GND New Net Name=IO3
+Added Member To Class: ClassName=esp32s3 Member=Component R? 12K
+Added Rule: Name=Schematic Supply Nets_1

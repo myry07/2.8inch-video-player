@@ -1,0 +1,36 @@
+Change Component Comment : Designator=C24 Old Comment=C0402 New Comment=12pF
+Change Component Comment : Designator=C25 Old Comment=C0402 New Comment=12pF
+Added Component: Designator=C?(C0402)
+Added Component: Designator=R?(R0402)
+Added Component: Designator=R?(R0402)
+Added Component: Designator=R?(R0402)
+Added Component: Designator=U?(TF-SMD_TF-01A)
+Added Pin To Net: NetName=VDD33 Pin=C21-2
+Added Pin To Net: NetName=VDD33 Pin=C22-2
+Added Pin To Net: NetName=VDD33 Pin=C23-2
+Added Pin To Net: NetName=VDD33 Pin=C?-2
+Added Pin To Net: NetName=VDD33 Pin=R?-1
+Added Pin To Net: NetName=VDD33 Pin=R?-1
+Added Pin To Net: NetName=VDD33 Pin=R?-1
+Added Pin To Net: NetName=VDD33 Pin=U?-4
+Added Pin To Net: NetName=GND Pin=U?-10
+Added Pin To Net: NetName=GND Pin=U?-11
+Added Pin To Net: NetName=GND Pin=U?-12
+Added Pin To Net: NetName=GND Pin=U?-13
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=U?-6
+Added Net: Name=NetC?_1
+Added Pin To Net: NetName=SD_CLK Pin=R?-2
+Added Pin To Net: NetName=SD_CLK Pin=U?-5
+Added Net: Name=SD_CLK
+Added Pin To Net: NetName=SD_CMD Pin=R?-2
+Added Pin To Net: NetName=SD_CMD Pin=U?-3
+Added Net: Name=SD_CMD
+Added Pin To Net: NetName=SD_DATA Pin=R?-2
+Added Pin To Net: NetName=SD_DATA Pin=U?-7
+Added Net: Name=SD_DATA
+Added Member To Class: ClassName=peripheral Member=Component C? 100nF
+Added Member To Class: ClassName=peripheral Member=Component R? 10K
+Added Member To Class: ClassName=peripheral Member=Component R? 10K
+Added Member To Class: ClassName=peripheral Member=Component R? 10K
+Added Member To Class: ClassName=peripheral Member=Component U? TF-01A_C91145

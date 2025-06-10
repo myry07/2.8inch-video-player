@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=GPIO Pin=U2-21
+Added Pin To Net: NetName=PMIC_IRQ Pin=U2-21

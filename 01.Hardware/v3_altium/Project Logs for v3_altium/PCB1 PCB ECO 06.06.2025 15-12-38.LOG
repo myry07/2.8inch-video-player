@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=IO3 Pin=R19-1
+Removed Pin From Net: NetName=IO3 Pin=U2-8
+Change Net Name : Old Net Name=IO3 New Net Name=GND
+Added Pin To Net: NetName=IO3 Pin=R19-1
+Added Pin To Net: NetName=IO3 Pin=U2-8
+Added Net: Name=IO3
+Added Rule: Name=Schematic Supply Nets

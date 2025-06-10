@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GPIO Pin=U2-43
+Removed Pin From Net: NetName=GPIO Pin=U2-44
+Removed Pin From Net: NetName=GPIO Pin=U2-45
+Change Net Name : Old Net Name=SD_CLK New Net Name=NetR15_2
+Added Pin To Net: NetName=IO38_SD_CMD Pin=R14-2
+Added Pin To Net: NetName=IO38_SD_CMD Pin=U2-43
+Added Pin To Net: NetName=IO38_SD_CMD Pin=U7-3
+Added Net: Name=IO38_SD_CMD
+Added Pin To Net: NetName=IO39_SD_CLK Pin=U2-45
+Added Net: Name=IO39_SD_CLK
+Added Pin To Net: NetName=IO39_SD_DATA Pin=R13-2
+Added Pin To Net: NetName=IO39_SD_DATA Pin=U2-44
+Added Pin To Net: NetName=IO39_SD_DATA Pin=U7-7
+Added Net: Name=IO39_SD_DATA

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VDD33 Pin=R10-1
+Removed Pin From Net: NetName=IO45_BTN Pin=R10-2
+Removed Pin From Net: NetName=IO45_BTN Pin=SW3-1
+Removed Member From Class: ClassName=peripheral Member=R10
+Change Component Designator: OldDesignator=SW1 NewDesignator=RST
+Change Component Designator: OldDesignator=SW2 NewDesignator=BOOT
+Change Component Designator: OldDesignator=SW3 NewDesignator=ON
+Added Pin To Net: NetName=PMIC_ON Pin=ON-1

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=IO46 Pin=U2-36
+Change Net Name : Old Net Name=IO47 New Net Name=IO48
+Added Pin To Net: NetName=IO47 Pin=U2-36
+Added Net: Name=IO47

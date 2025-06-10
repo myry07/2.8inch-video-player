@@ -1,0 +1,59 @@
+Added Component: Designator=C28(C0402)
+Added Component: Designator=C29(C0603)
+Added Component: Designator=C30(C0402)
+Added Component: Designator=Q1(SOT-23_L2.9-W1.3-P1.90-LS2.4-BR)
+Added Component: Designator=R16(R0402)
+Added Component: Designator=R17(R0402)
+Added Component: Designator=R18(R0402)
+Added Component: Designator=U10(SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR)
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C30-1
+Added Pin To Net: NetName=VDD33 Pin=C30-2
+Added Pin To Net: NetName=GND Pin=FPC1-1
+Added Pin To Net: NetName=VDD33 Pin=FPC1-7
+Added Pin To Net: NetName=GND Pin=FPC2-1
+Added Pin To Net: NetName=I2C_SDA Pin=FPC2-4
+Added Pin To Net: NetName=I2C_SCL Pin=FPC2-5
+Added Pin To Net: NetName=VDD33 Pin=FPC2-6
+Added Pin To Net: NetName=GND Pin=Q1-2
+Added Pin To Net: NetName=GND Pin=R18-2
+Added Pin To Net: NetName=GND Pin=U10-1
+Added Pin To Net: NetName=VDD333 Pin=U10-3
+Added Pin To Net: NetName=2.8V Pin=C28-2
+Added Pin To Net: NetName=2.8V Pin=C29-2
+Added Pin To Net: NetName=2.8V Pin=FPC1-2
+Added Pin To Net: NetName=2.8V Pin=U10-2
+Added Net: Name=2.8V
+Added Pin To Net: NetName=CLK Pin=FPC1-4
+Added Net: Name=CLK
+Added Pin To Net: NetName=CS Pin=FPC1-5
+Added Net: Name=CS
+Added Pin To Net: NetName=DC Pin=FPC1-10
+Added Net: Name=DC
+Added Pin To Net: NetName=LCD_BLK Pin=R17-2
+Added Net: Name=LCD_BLK
+Added Pin To Net: NetName=LEDK Pin=FPC1-8
+Added Pin To Net: NetName=LEDK Pin=R16-2
+Added Net: Name=LEDK
+Added Pin To Net: NetName=MOSI Pin=FPC1-3
+Added Net: Name=MOSI
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R17-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R18-1
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=R16-1
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=TP_INT Pin=FPC2-3
+Added Net: Name=TP_INT
+Added Pin To Net: NetName=TP_RST Pin=FPC2-2
+Added Net: Name=TP_RST
+Added Member To Class: ClassName=peripheral Member=Component C28 100nF
+Added Member To Class: ClassName=peripheral Member=Component C29 22uF
+Added Member To Class: ClassName=peripheral Member=Component C30 100nF
+Added Member To Class: ClassName=peripheral Member=Component Q1 Si2302CDS-T1-GE3
+Added Member To Class: ClassName=peripheral Member=Component R16 10
+Added Member To Class: ClassName=peripheral Member=Component R17 1K
+Added Member To Class: ClassName=peripheral Member=Component R18 10K
+Added Member To Class: ClassName=peripheral Member=Component U10 XC6206-2.8V

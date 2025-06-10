@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=I2C_SDA Pin=FPC2-4
+Removed Pin From Net: NetName=I2C_SCL Pin=FPC2-5
+Removed Pin From Net: NetName=GPIO Pin=U2-17
+Added Pin To Net: NetName=IO13_I2C_SDA Pin=FPC2-4
+Added Pin To Net: NetName=IO14_I2C_SCL Pin=FPC2-5
+Added Pin To Net: NetName=IO10_TP_RST Pin=FPC2-2
+Added Pin To Net: NetName=IO10_TP_RST Pin=U2-15
+Added Net: Name=IO10_TP_RST
+Added Pin To Net: NetName=IO11_TP_INT Pin=FPC2-3
+Added Pin To Net: NetName=IO11_TP_INT Pin=U2-16
+Added Net: Name=IO11_TP_INT
+Added Pin To Net: NetName=IO12 Pin=U2-17
+Added Net: Name=IO12

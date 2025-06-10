@@ -1,0 +1,17 @@
+Added Component: Designator=FPC1(FPC-SMD_10P-P0.50_HDGC_0.5K-DX-10PWBG)
+Added Component: Designator=FPC2(FPC-SMD_6P-P0.50_DEALON_0.5K-DX-6PWB)
+Added Component: Designator=LED1(LED-SMD_4P-L2.0-W2.0-BR-1)
+Added Component: Designator=SW1(KEY-SMD_L3.0-W2.5-LS4.0_TS-1603S)
+Added Component: Designator=SW2(KEY-SMD_L3.0-W2.5-LS4.0_TS-1603S)
+Added Component: Designator=SW3(KEY-SMD_L3.0-W2.5-LS4.0_TS-1603S)
+Added Component: Designator=U1(ANT-SMD_L3.2-W1.6)
+Added Component: Designator=U2(QFN-56_L7.0-W7.0-P0.40-TL-EP4.0)
+Added Component: Designator=U3(WSON-8_L6.0-W5.0-P1.27-BL-EP)
+Added Component: Designator=U4(DFN-10_L2.6-W2.6-P0.50-BL-EP)
+Added Component: Designator=U5(QFN-40_L5.0-W5.0-P0.40-TL-EP3.4)
+Added Component: Designator=U6(TQFN-16_L3.0-W3.0-P0.50-BL-EP1.5)
+Added Component: Designator=USB1(USB-C-SMD_TYPE-C-6PIN-2MD-073)
+Added Component: Designator=X1(OSC-SMD_4P-L3.2-W2.5-BL_SIT8008BI)
+Added Component: Designator=X2(FC-135R_L3.2-W1.5)
+Added Class: Name=esp32s3
+Added Class: Name=peripheral

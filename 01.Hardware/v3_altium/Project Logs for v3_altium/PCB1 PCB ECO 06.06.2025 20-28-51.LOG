@@ -1,0 +1,4 @@
+Change Net Name : Old Net Name=IO19_P New Net Name=USB_DP
+Change Net Name : Old Net Name=IO20_N New Net Name=USB_DN
+Add Differential Pair: Number of nets in differential pair USB_DN is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair USB_DP is 1 instead of 2

@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GPIO Pin=R5-2
+Removed Pin From Net: NetName=GPIO Pin=U2-50
+Removed Pin From Net: NetName=GPIO Pin=U2-52
+Added Component: Designator=R10(R0402)
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=PMIC_TS Pin=R10-2
+Change Net Name : Old Net Name=IO45_BTN New Net Name=IO45
+Added Pin To Net: NetName=IO46 Pin=U2-52
+Added Net: Name=IO46
+Added Pin To Net: NetName=U0RXD Pin=U2-50
+Added Net: Name=U0RXD
+Added Pin To Net: NetName=U0TXD Pin=R5-2
+Added Net: Name=U0TXD
+Added Member To Class: ClassName=peripheral Member=Component R10 10K

@@ -1,0 +1,47 @@
+Change Net Color : Old Net Color=RGB(244, 250, 98) New Net Color=Default
+Change Net Color : Old Net Color=Fuchsia New Net Color=Default
+Change Net Color : Old Net Color=Fuchsia New Net Color=Default
+Change Net Color : Old Net Color=RGB(200, 235, 235) New Net Color=Default
+Change Net Color : Old Net Color=RGB(200, 235, 235) New Net Color=Default
+Change Net Color : Old Net Color=RGB(200, 235, 235) New Net Color=Default
+Change Net Color : Old Net Color=RGB(239, 181, 177) New Net Color=Default
+Change Net Color : Old Net Color=RGB(239, 181, 177) New Net Color=Default
+Change Net Color : Old Net Color=RGB(239, 181, 177) New Net Color=Default
+Change Net Color : Old Net Color=RGB(66, 28, 139) New Net Color=Default
+Change Net Color : Old Net Color=RGB(66, 28, 139) New Net Color=Default
+Change Net Color : Old Net Color=RGB(66, 28, 139) New Net Color=Default
+Change Net Color : Old Net Color=RGB(0, 57, 93) New Net Color=Default
+Change Net Color : Old Net Color=RGB(0, 57, 93) New Net Color=Default
+Change Net Color : Old Net Color=RGB(0, 57, 93) New Net Color=Default
+Change Net Color : Old Net Color=RGB(0, 57, 93) New Net Color=Default
+Change Net Color : Old Net Color=RGB(0, 57, 93) New Net Color=Default
+Change Net Color : Old Net Color=RGB(244, 250, 98) New Net Color=Default
+Change Net Color : Old Net Color=RGB(172, 177, 162) New Net Color=Default
+Change Net Color : Old Net Color=RGB(244, 250, 98) New Net Color=Default
+Change Net Color : Old Net Color=RGB(172, 177, 162) New Net Color=Default
+Change Net Color : Old Net Color=Aqua New Net Color=Default
+Change Net Color : Old Net Color=Aqua New Net Color=Default
+Added Pin To Net: NetName=IO4_TP_INT Pin=FPC2-3
+Added Pin To Net: NetName=IO4_TP_INT Pin=U2-9
+Added Net: Name=IO4_TP_INT
+Added Pin To Net: NetName=IO5_TP_RST Pin=FPC2-2
+Added Pin To Net: NetName=IO5_TP_RST Pin=U2-10
+Added Net: Name=IO5_TP_RST
+Added Pin To Net: NetName=IO6_LCD_DC Pin=FPC1-10
+Added Pin To Net: NetName=IO6_LCD_DC Pin=U2-11
+Added Net: Name=IO6_LCD_DC
+Added Pin To Net: NetName=IO7_LCD_BLK Pin=R17-2
+Added Pin To Net: NetName=IO7_LCD_BLK Pin=U2-12
+Added Net: Name=IO7_LCD_BLK
+Added Pin To Net: NetName=IO8_SPI_RST Pin=FPC1-6
+Added Pin To Net: NetName=IO8_SPI_RST Pin=U2-13
+Added Net: Name=IO8_SPI_RST
+Added Pin To Net: NetName=IO9_LCD_CS Pin=FPC1-5
+Added Pin To Net: NetName=IO9_LCD_CS Pin=U2-14
+Added Net: Name=IO9_LCD_CS
+Added Pin To Net: NetName=IO10_SPI_CLK Pin=FPC1-4
+Added Pin To Net: NetName=IO10_SPI_CLK Pin=U2-15
+Added Net: Name=IO10_SPI_CLK
+Added Pin To Net: NetName=IO11_SPI_MOSI Pin=FPC1-3
+Added Pin To Net: NetName=IO11_SPI_MOSI Pin=U2-16
+Added Net: Name=IO11_SPI_MOSI

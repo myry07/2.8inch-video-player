@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=I2C_SDA Pin=R20-1
+Removed Pin From Net: NetName=I2C_SCL Pin=R21-1
+Removed Pin From Net: NetName=GPIO Pin=U2-9
+Removed Pin From Net: NetName=GPIO Pin=U2-10
+Removed Pin From Net: NetName=GPIO Pin=U2-11
+Removed Pin From Net: NetName=GPIO Pin=U2-12
+Removed Pin From Net: NetName=GPIO Pin=U2-13
+Removed Pin From Net: NetName=GPIO Pin=U2-14
+Removed Pin From Net: NetName=I2C_SDA Pin=U2-15
+Removed Pin From Net: NetName=I2C_SCL Pin=U2-16
+Removed Pin From Net: NetName=GPIO Pin=U2-18
+Removed Pin From Net: NetName=GPIO Pin=U2-19
+Added Pin To Net: NetName=IO4_SPI_MOSI Pin=FPC1-3
+Added Pin To Net: NetName=IO4_SPI_MOSI Pin=U2-9
+Added Net: Name=IO4_SPI_MOSI
+Added Pin To Net: NetName=IO5_SPI_CLK Pin=FPC1-4
+Added Pin To Net: NetName=IO5_SPI_CLK Pin=U2-10
+Added Net: Name=IO5_SPI_CLK
+Added Pin To Net: NetName=IO6_LCD_CS Pin=FPC1-5
+Added Pin To Net: NetName=IO6_LCD_CS Pin=U2-11
+Added Net: Name=IO6_LCD_CS
+Added Pin To Net: NetName=IO7_SPI_RST Pin=FPC1-6
+Added Pin To Net: NetName=IO7_SPI_RST Pin=U2-12
+Added Net: Name=IO7_SPI_RST
+Added Pin To Net: NetName=IO8_LCD_BLK Pin=R17-2
+Added Pin To Net: NetName=IO8_LCD_BLK Pin=U2-13
+Added Net: Name=IO8_LCD_BLK
+Added Pin To Net: NetName=IO9_LCD_DC Pin=FPC1-10
+Added Pin To Net: NetName=IO9_LCD_DC Pin=U2-14
+Added Net: Name=IO9_LCD_DC
+Added Pin To Net: NetName=IO10_I2C_SDA Pin=U2-15
+Added Net: Name=IO10_I2C_SDA
+Added Pin To Net: NetName=IO11_I2C_SCL Pin=U2-16
+Added Net: Name=IO11_I2C_SCL
+Added Pin To Net: NetName=IO13_I2C_SDA Pin=R20-1
+Added Pin To Net: NetName=IO13_I2C_SDA Pin=U2-18
+Added Net: Name=IO13_I2C_SDA
+Added Pin To Net: NetName=IO14_I2C_SCL Pin=R21-1
+Added Pin To Net: NetName=IO14_I2C_SCL Pin=U2-19
+Added Net: Name=IO14_I2C_SCL

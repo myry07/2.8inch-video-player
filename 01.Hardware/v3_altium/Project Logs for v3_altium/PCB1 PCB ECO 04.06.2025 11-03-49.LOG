@@ -1,0 +1,4 @@
+Added Component: Designator=L1(L0402-SMD)
+Added Component: Designator=R1(R0402)
+Added Member To Class: ClassName=Sheet1 Member=Component L1 L0402-SMD
+Added Member To Class: ClassName=Sheet1 Member=Component R1 R0402

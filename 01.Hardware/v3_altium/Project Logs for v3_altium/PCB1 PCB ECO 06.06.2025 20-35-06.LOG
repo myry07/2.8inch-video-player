@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=IO46 Pin=U2-36
+Added Pin To Net: NetName=IO42 Pin=U2-48
+Added Net: Name=IO42
+Added Pin To Net: NetName=IO47 Pin=U2-37
+Added Net: Name=IO47

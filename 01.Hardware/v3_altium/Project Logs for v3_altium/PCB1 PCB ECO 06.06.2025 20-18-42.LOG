@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GPIO Pin=U2-6
+Removed Pin From Net: NetName=GPIO Pin=U2-7
+Change Net Name : Old Net Name=GPIO19 New Net Name=IO19_N
+Change Net Name : Old Net Name=GPIO20 New Net Name=IO20_P
+Added Pin To Net: NetName=IO1 Pin=U2-6
+Added Net: Name=IO1
+Added Pin To Net: NetName=IO2 Pin=U2-7
+Added Net: Name=IO2
+Add Differential Pair: Number of nets in differential pair IO19 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair IO20 is 1 instead of 2
