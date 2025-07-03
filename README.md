@@ -10,6 +10,8 @@ LCD: 2.8 inch ST7789
 TP: FT6336U  
 SD: SPI Mode  
 
+show link: https://www.instagram.com/reel/DGxaBIpI4EF/?igsh=b29zMGx4N3hubnQz  
+
 <div align=center>
 	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/pcb1.jpg" width="500" height="310">
 </div>
